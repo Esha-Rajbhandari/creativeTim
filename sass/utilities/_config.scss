@@ -19,13 +19,13 @@ $base__line: 24px;
 // @weight - {integer} or {keyword} i.e. 800, bold
 // @style - {keyword} i.e. normal, italic
 
-//$typefaces: (
-//  'FILENAME': (
-//    family: 'fontname',
-//    weight: 100,
-//    style: normal,
-//  ),
-//);
+$typefaces: (
+ 'FILENAME': (
+   family: 'fontname',
+   weight: 100,
+   style: normal,
+ ),
+);
 
 $font-family-sans-fallback: 'Arial', sans-serif;
 $font-family-sans: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', $font-family-sans-fallback;
