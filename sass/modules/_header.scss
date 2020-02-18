@@ -2,9 +2,12 @@
 
 .header {
   background: url("../../images/BG_HEADER.png");
+  background-size: cover;
   min-height: 664px;
   font-family: Roboto;
   color: $white;
+  position: relative;
+  z-index: -999;
   @include e(nav) {
     min-height: $m-62;
     background: $black-lighten;

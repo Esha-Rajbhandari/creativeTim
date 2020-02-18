@@ -1,0 +1,201 @@
+.main-content {
+  position: relative;
+}
+
+.section-container {
+  position: absolute;
+  left: 10px;
+  top: -54px;
+  right: 10px;
+}
+
+.section {
+  border-radius: 6px;
+  background: $white;
+  font-family: Roboto;
+  //   font-style: normal;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
+
+  @include e(one) {
+    padding-bottom: 162px;
+    p {
+      text-align: center;
+      padding: 0px 20px;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 24px;
+      color: #999999;
+    }
+  }
+
+  .heading {
+    padding: 94px 39px 38px 39px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 36.4px;
+    line-height: 43px;
+    color: #3c4858;
+  }
+
+  @include e(two) {
+    text-align: center;
+    padding-bottom: 108px;
+  }
+
+  @include e(three) {
+    text-align: center;
+    padding-bottom: 110px;
+  }
+
+  @include e(four) {
+    text-align: center;
+    padding-bottom: 113px;
+  }
+
+  @include e(five) {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    img {
+      width: 170px;
+      height: 170px;
+      padding-top: 19px;
+    }
+    .profile-name {
+      font-size: 18.2px;
+      line-height: 21px;
+      color: #3c4858;
+      padding: 32px 0px 7px 0px;
+    }
+    .profile-profession {
+      font-size: 13.65px;
+      line-height: 16px;
+      color: #777777;
+    }
+    .profile-details {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #999999;
+      padding: 34px 15px;
+    }
+    .profile-socialIcon {
+      ul {
+        width: auto;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      li {
+        margin-right: 29px;
+      }
+      li:last-child {
+        margin-right: 0px;
+      }
+      a {
+        color: #999999;
+      }
+    }
+  }
+
+  @include e(six) {
+    p {
+      font-weight: 300;
+      font-size: 18.2px;
+      line-height: 21px;
+      text-align: center;
+      padding: 0px 20px;
+      color: #999999;
+    }
+    .form {
+      padding: 47px 20px 27px 20px;
+    }
+    .form-input {
+      padding-bottom: 52px;
+    }
+    input,
+    textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #999999;
+    }
+    .btn {
+      border: none;
+      background: #9c27b0;
+      box-shadow: 0px 2px 2px rgba(156, 39, 176, 0.2);
+      border-radius: 3px;
+      padding: 13px 30px;
+      color: $white;
+    }
+  }
+
+  .icon {
+    padding-bottom: 31px;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .feature-heading {
+    padding-bottom: 18px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #3c4858;
+  }
+
+  .feature-content {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 0px 20px;
+  }
+}
+
+@include mq(xl) {
+  .section {
+    @include e(one) {
+      width: 768px;
+      margin: 0 auto;
+    }
+    .feature {
+      float: left;
+      width: 328px;
+      margin-right: 53px;
+    }
+    .feature:last-child {
+      margin-right: 0px;
+    }
+    .profile {
+      float: left;
+      width: 347px;
+      margin-right: 34px;
+    }
+    .profile:last-child {
+      margin-right: 0px;
+    }
+    .heading {
+      padding-top: 185px;
+    }
+    @include e(six) {
+      width: 753px;
+      margin: 0 auto;
+    }
+    .form {
+      .form-input {
+        text-align: center;
+      }
+      .field-name {
+        float: left;
+        width: 50%;
+        padding-right: 29px;
+      }
+      .field-email {
+        float: left;
+        width: 50%;
+      }
+    }
+  }
+}

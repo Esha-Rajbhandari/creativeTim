@@ -1,0 +1,54 @@
+.footer {
+  padding-top: 33px;
+  font-family: Roboto;
+  font-style: normal;
+  nav {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include e(nav_item) {
+    float: left;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin-right: 33px;
+    color: #333333;
+  }
+  @include e(nav_item) {
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  @include e(copyright) {
+    text-align: center;
+    font-size: 14px;
+    line-height: 11px;
+    color: #000000;
+    padding: 31px 0px 18px 0px;
+  }
+}
+
+@include mq(md) {
+  .footer {
+    nav {
+      display: block;
+      margin-left: 39px;
+      margin-right: 0px;
+    }
+  }
+}
+
+@include mq(xl){
+    .footer{
+        @include e(nav){
+            width: 50%;
+            float: left;
+        }
+        @include e(copyright){
+            float: right;
+            padding: 0px 153px 33px 165px;
+        }
+    }
+}
